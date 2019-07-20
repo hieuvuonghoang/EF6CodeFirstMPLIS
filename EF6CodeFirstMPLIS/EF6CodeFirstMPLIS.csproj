@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36355B77-7396-4121-B4F1-54CE8116A4AC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EF6CodeFirstMPLIS</RootNamespace>
+    <AssemblyName>EF6CodeFirstMPLIS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.3.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.19.3.0\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\CS\CS_CHUKYSO_Configuration.cs" />
+    <Compile Include="Configuration\CS\CS_GIAYTOXACMINH_Configuration.cs" />
+    <Compile Include="Configuration\CS\CS_LICHSUGIAHAN_Configuration.cs" />
+    <Compile Include="Configuration\CS\CS_NHACUNGCAP_Configuration.cs" />
+    <Compile Include="Configuration\HC\HC_DMKVHC_Configuration.cs" />
+    <Compile Include="Configuration\HC\HC_HUYEN_Configuration.cs" />
+    <Compile Include="Configuration\HC\HC_TINHTHAMSO_Configuration.cs" />
+    <Compile Include="Configuration\HC\HC_TINH_Configuration.cs" />
+    <Compile Include="Configuration\HT\HT_CAUHINHNGUOIDUNG_Configuration.cs" />
+    <Compile Include="Configuration\HT\HT_LICHSUTRUYCAP_Configuration.cs" />
+    <Compile Include="Configuration\HT\HT_NGUOIDUNG_Configuration.cs" />
+    <Compile Include="Configuration\HT\HT_NGUOIDUNG_QUYEN_Configuration.cs" />
+    <Compile Include="Configuration\HT\HT_TOCHUC_Configuration.cs" />
+    <Compile Include="Configuration\QT\QT_BUOCQT_CAUHINH_Configuration.cs" />
+    <Compile Include="Configuration\QT\QT_BUOCQUYTRINH_Configuration.cs" />
+    <Compile Include="Configuration\QT\QT_GHICHUXULY_Configuration.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CS\CS_CHUKYSO.cs" />
+    <Compile Include="Models\CS\CS_GIAYTOXACMINH.cs" />
+    <Compile Include="Models\CS\CS_LICHSUGIAHAN.cs" />
+    <Compile Include="Models\CS\CS_NHACUNGCAP.cs" />
+    <Compile Include="Models\DC\DC_BD_CHU.cs" />
+    <Compile Include="Models\DC\DC_BD_CHUYENHTSDD.cs" />
+    <Compile Include="Models\DC\DC_BD_CHUYENMDSDD.cs" />
+    <Compile Include="Models\DC\DC_BD_GCN.cs" />
+    <Compile Include="Models\DC\DC_BD_GCN_GCN.cs" />
+    <Compile Include="Models\DC\DC_BD_THECHAP.cs" />
+    <Compile Include="Models\DC\DC_BD_THUA.cs" />
+    <Compile Include="Models\DC\DC_BD_THUA_THUA.cs" />
+    <Compile Include="Models\DC\DC_BD_TREN_GCN.cs" />
+    <Compile Include="Models\DC\DC_BIENDONG.cs" />
+    <Compile Include="Models\DC\DC_CANHAN.cs" />
+    <Compile Include="Models\DC\DC_CANHO.cs" />
+    <Compile Include="Models\DC\DC_CANHO_HANGMUCNCH.cs" />
+    <Compile Include="Models\DC\DC_CAYLAUNAM.cs" />
+    <Compile Include="Models\DC\DC_CHITIETCONGKHAI.cs" />
+    <Compile Include="Models\DC\DC_CONGDONG.cs" />
+    <Compile Include="Models\DC\DC_CONGTRINHNGAM.cs" />
+    <Compile Include="Models\DC\DC_CONGTRINHXAYDUNG.cs" />
+    <Compile Include="Models\DC\DC_DANGKY_GCN.cs" />
+    <Compile Include="Models\DC\DC_DANGKY_NGUOI.cs" />
+    <Compile Include="Models\DC\DC_DANGKY_TAISAN.cs" />
+    <Compile Include="Models\DC\DC_DANGKY_THUA.cs" />
+    <Compile Include="Models\DC\DC_DANHSACHCONGKHAI.cs" />
+    <Compile Include="Models\DC\DC_DIACHI.cs" />
+    <Compile Include="Models\DC\DC_DOANDUONG.cs" />
+    <Compile Include="Models\DC\DC_DONDANGKY.cs" />
+    <Compile Include="Models\DC\DC_DONKIENNGHI.cs" />
+    <Compile Include="Models\DC\DC_GCN_TILESH.cs" />
+    <Compile Include="Models\DC\DC_GIAYCHUNGNHAN.cs" />
+    <Compile Include="Models\DC\DC_GIAYTOTUYTHAN.cs" />
+    <Compile Include="Models\DC\DC_GTKEMTHEO.cs" />
+    <Compile Include="Models\DC\DC_HANCHE.cs" />
+    <Compile Include="Models\DC\DC_HANGMUCCONGTRINH.cs" />
+    <Compile Include="Models\DC\DC_HANGMUCNGOAICANHO.cs" />
+    <Compile Include="Models\DC\DC_HOGIADINH.cs" />
+    <Compile Include="Models\DC\DC_HOGIADINH_THANHVIEN.cs" />
+    <Compile Include="Models\DC\DC_KHOANDUOCTRU.cs" />
+    <Compile Include="Models\DC\DC_KHUCHUNGCU.cs" />
+    <Compile Include="Models\DC\DC_KHUVUC.cs" />
+    <Compile Include="Models\DC\DC_LOAIBIENDONG.cs" />
+    <Compile Include="Models\DC\DC_LOAICHEDOMIENGIAM.cs" />
+    <Compile Include="Models\DC\DC_LOAICHEDONO.cs" />
+    <Compile Include="Models\DC\DC_LOAIHANCHE.cs" />
+    <Compile Include="Models\DC\DC_LOAINGHIAVUTAICHINH.cs" />
+    <Compile Include="Models\DC\DC_MIENGIAMNVTC.cs" />
+    <Compile Include="Models\DC\DC_MUCDICHSUDUNGDAT.cs" />
+    <Compile Include="Models\DC\DC_MUCDICHSUDUNGDATLS.cs" />
+    <Compile Include="Models\DC\DC_NGANCHANGIAYCHUNGNHAN.cs" />
+    <Compile Include="Models\DC\DC_NGANCHANNGUOI.cs" />
+    <Compile Include="Models\DC\DC_NGANCHANTAISAN.cs" />
+    <Compile Include="Models\DC\DC_NGANCHANTHUADAT.cs" />
+    <Compile Include="Models\DC\DC_NGHIAVUTAICHINH.cs" />
+    <Compile Include="Models\DC\DC_NGUOI.cs" />
+    <Compile Include="Models\DC\DC_NGUOILS.cs" />
+    <Compile Include="Models\DC\DC_NGUOI_DIACHI.cs" />
+    <Compile Include="Models\DC\DC_NGUONGOCSUDUNG.cs" />
+    <Compile Include="Models\DC\DC_NHACHUNGCU.cs" />
+    <Compile Include="Models\DC\DC_NHARIENGLE.cs" />
+    <Compile Include="Models\DC\DC_NHOMNGUOI.cs" />
+    <Compile Include="Models\DC\DC_NHOMNGUOI_THANHVIEN.cs" />
+    <Compile Include="Models\DC\DC_NOICONGCHUNG.cs" />
+    <Compile Include="Models\DC\DC_NONVTC.cs" />
+    <Compile Include="Models\DC\DC_QUYENQUANLYDAT.cs" />
+    <Compile Include="Models\DC\DC_QUYENSOHUUTAISAN.cs" />
+    <Compile Include="Models\DC\DC_QUYENSOHUUTAISANLS.cs" />
+    <Compile Include="Models\DC\DC_QUYENSUDUNGDAT.cs" />
+    <Compile Include="Models\DC\DC_QUYENSUDUNGDATLS.cs" />
+    <Compile Include="Models\DC\DC_QUYENSUDUNGDATSAUBD.cs" />
+    <Compile Include="Models\DC\DC_QUYETDINH.cs" />
+    <Compile Include="Models\DC\DC_RUNGTRONG.cs" />
+    <Compile Include="Models\DC\DC_SODIACHINHDIENTU_CANHO.cs" />
+    <Compile Include="Models\DC\DC_SODIACHINHDIENTU_THUADAT.cs" />
+    <Compile Include="Models\DC\DC_TAILIEUDODAC.cs" />
+    <Compile Include="Models\DC\DC_TAISANGANLIENVOIDAT.cs" />
+    <Compile Include="Models\DC\DC_TAISANGANLIENVOIDATLICHSU.cs" />
+    <Compile Include="Models\DC\DC_TAISANGANLIENVOIDATLS.cs" />
+    <Compile Include="Models\DC\DC_TAISAN_DIACHI.cs" />
+    <Compile Include="Models\DC\DC_TENDUONG.cs" />
+    <Compile Include="Models\DC\DC_THONGTINNGANCHAN.cs" />
+    <Compile Include="Models\DC\DC_THUADAT.cs" />
+    <Compile Include="Models\DC\DC_THUADATLS.cs" />
+    <Compile Include="Models\DC\DC_THUADAT_TAILIEUDODAC.cs" />
+    <Compile Include="Models\DC\DC_THUADAT_TAISAN.cs" />
+    <Compile Include="Models\DC\DC_THUATAISAN.cs" />
+    <Compile Include="Models\DC\DC_THUEDAT.cs" />
+    <Compile Include="Models\DC\DC_TOCHUC.cs" />
+    <Compile Include="Models\DC\DC_TRANHCHAP.cs" />
+    <Compile Include="Models\DC\DC_VITRITHUADAT.cs" />
+    <Compile Include="Models\DC\DC_VOCHONG.cs" />
+    <Compile Include="Models\DC\DC_XACNHANDONDANGKY.cs" />
+    <Compile Include="Models\DC\DC_XA_TENDUONG.cs" />
+    <Compile Include="Models\DC\DC_YKIENXACNHAN.cs" />
+    <Compile Include="Models\DM\DM_BOTHUTUCHANHCHINH.cs" />
+    <Compile Include="Models\DM\DM_DANTOC.cs" />
+    <Compile Include="Models\DM\DM_DOITUONGSUDUNG.cs" />
+    <Compile Include="Models\DM\DM_GIAYTOKEMTHEOHS.cs" />
+    <Compile Include="Models\DM\DM_HINHTHUCSUDUNGDAT.cs" />
+    <Compile Include="Models\DM\DM_LOAIBANDODIACHINH.cs" />
+    <Compile Include="Models\DM\DM_LOAIBIENDONG.cs" />
+    <Compile Include="Models\DM\DM_LOAICAPHANG.cs" />
+    <Compile Include="Models\DM\DM_LOAIDATHIENTRANG.cs" />
+    <Compile Include="Models\DM\DM_LOAIDIADANH.cs" />
+    <Compile Include="Models\DM\DM_LOAIDIEMDOCAO.cs" />
+    <Compile Include="Models\DM\DM_LOAIDIEMTOADO.cs" />
+    <Compile Include="Models\DM\DM_LOAIDTMIENGIAM.cs" />
+    <Compile Include="Models\DM\DM_LOAIDUONG.cs" />
+    <Compile Include="Models\DM\DM_LOAIDUONGTHUYHE.cs" />
+    <Compile Include="Models\DM\DM_LOAIGIAYTOTUYTHAN.cs" />
+    <Compile Include="Models\DM\DM_LOAIHANHDONG.cs" />
+    <Compile Include="Models\DM\DM_LOAIHANHLANGANTOANBAOVE.cs" />
+    <Compile Include="Models\DM\DM_LOAIKETCAU.cs" />
+    <Compile Include="Models\DM\DM_LOAIKHUCHUCNANGCAPHUYEN.cs" />
+    <Compile Include="Models\DM\DM_LOAIKHUCHUCNANGCAPTINH.cs" />
+    <Compile Include="Models\DM\DM_LOAIKHUVUCTONGHOP.cs" />
+    <Compile Include="Models\DM\DM_LOAIMOC.cs" />
+    <Compile Include="Models\DM\DM_LOAIMOCBIENGIOIDIAGIOI.cs" />
+    <Compile Include="Models\DM\DM_LOAINGHIAVUTAICHINH.cs" />
+    <Compile Include="Models\DM\DM_LOAINGUONGOCSUDUNG.cs" />
+    <Compile Include="Models\DM\DM_LOAINHA.cs" />
+    <Compile Include="Models\DM\DM_LOAIQUYHOACH.cs" />
+    <Compile Include="Models\DM\DM_LOAITAISANGANLIENVOIDAT.cs" />
+    <Compile Include="Models\DM\DM_LOAITOCHUC.cs" />
+    <Compile Include="Models\DM\DM_LOAITRANGTHAIDANGKYCAPGCN.cs" />
+    <Compile Include="Models\DM\DM_LOAIVUNGTHUYHE.cs" />
+    <Compile Include="Models\DM\DM_MUCDICHSUDUNG.cs" />
+    <Compile Include="Models\DM\DM_MUCDICHSUDUNGQH.cs" />
+    <Compile Include="Models\DM\DM_QHVOICHUHO.cs" />
+    <Compile Include="Models\DM\DM_QUOCTICH.cs" />
+    <Compile Include="Models\DM\DM_SEQUENCE.cs" />
+    <Compile Include="Models\DM\DM_TRANGTHAIHOSO.cs" />
+    <Compile Include="Models\GD\GD_BANDOGIADAT.cs" />
+    <Compile Include="Models\GD\GD_BANGGIADAT.cs" />
+    <Compile Include="Models\GD\GD_DMLOAIGIADAT.cs" />
+    <Compile Include="Models\GD\GD_GIATHUADAT.cs" />
+    <Compile Include="Models\GD\GD_HSDCGIADAT.cs" />
+    <Compile Include="Models\GD\GD_KHUNGGIADAT.cs" />
+    <Compile Include="Models\GD\GD_QDGIADAT.cs" />
+    <Compile Include="Models\HC\HC_DMKVHC.cs" />
+    <Compile Include="Models\HC\HC_HUYEN.cs" />
+    <Compile Include="Models\HC\HC_TINH.cs" />
+    <Compile Include="Models\HC\HC_TINHTHAMSO.cs" />
+    <Compile Include="Models\HSV\HSV_HUYEN_NGUOIDUNG.cs" />
+    <Compile Include="Models\HSV\HSV_LICHSU.cs" />
+    <Compile Include="Models\HSV\HSV_TINH_NGUOIDUNG.cs" />
+    <Compile Include="Models\HSV\HSV_XA_NGUOIDUNG.cs" />
+    <Compile Include="Models\HS\HS_HOSO.cs" />
+    <Compile Include="Models\HS\HS_LICHSU.cs" />
+    <Compile Include="Models\HS\HS_LIENKETTHUADAT.cs" />
+    <Compile Include="Models\HS\HS_TC_CHU.cs" />
+    <Compile Include="Models\HS\HS_TC_GCN.cs" />
+    <Compile Include="Models\HS\HS_THANHPHANHOSO.cs" />
+    <Compile Include="Models\HS\HS_VITRILUUTRU.cs" />
+    <Compile Include="Models\HTV\HTV_MAUGIAYTO.cs" />
+    <Compile Include="Models\HTV\HTV_NGUOIDUNG_CHUCNANG.cs" />
+    <Compile Include="Models\HTV\HTV_NGUOIDUNG_CHUCVU.cs" />
+    <Compile Include="Models\HTV\HTV_NGUOIDUNG_MENU.cs" />
+    <Compile Include="Models\HTV\HTV_NGUOIDUNG_UNGDUNG.cs" />
+    <Compile Include="Models\HT\HT_CAUHINH.cs" />
+    <Compile Include="Models\HT\HT_CAUHINHNGUOIDUNG.cs" />
+    <Compile Include="Models\HT\HT_CHUCNANG.cs" />
+    <Compile Include="Models\HT\HT_CHUCNANG_NHOMCHUCNANG.cs" />
+    <Compile Include="Models\HT\HT_LICHSUTRUYCAP.cs" />
+    <Compile Include="Models\HT\HT_MAUGIAYTOKEMTHEOHS.cs" />
+    <Compile Include="Models\HT\HT_MENU.cs" />
+    <Compile Include="Models\HT\HT_NGUOIDUNG.cs" />
+    <Compile Include="Models\HT\HT_NGUOIDUNG_QUYEN.cs" />
+    <Compile Include="Models\HT\HT_NHOMCHUCNANG.cs" />
+    <Compile Include="Models\HT\HT_NHOMCHUCNANG_MENU.cs" />
+    <Compile Include="Models\HT\HT_QUYEN.cs" />
+    <Compile Include="Models\HT\HT_THONGBAO.cs" />
+    <Compile Include="Models\HT\HT_TOCHUC.cs" />
+    <Compile Include="Models\HT\HT_TOCHUC_NGUOIDUNG.cs" />
+    <Compile Include="Models\HT\HT_TOCHUC_NHOMCHUCNANG.cs" />
+    <Compile Include="Models\HT\HT_UNGDUNG.cs" />
+    <Compile Include="Models\HT\HT_XA_NGUOIDUNG.cs" />
+    <Compile Include="Models\HT\HT_XA_TOCHUC.cs" />
+    <Compile Include="Models\LCHSV_TAILIEUDODAC_LOAIBDDC.cs" />
+    <Compile Include="Models\LOAIHOSO_DONVIAPDUNG.cs" />
+    <Compile Include="Models\LS\LS_BD_GCN.cs" />
+    <Compile Include="Models\LS\LS_BD_THUA.cs" />
+    <Compile Include="Models\LS\LS_BOHOSO.cs" />
+    <Compile Include="Models\LS\LS_TC_CHU.cs" />
+    <Compile Include="Models\LS\LS_TC_GCN.cs" />
+    <Compile Include="Models\LS\LS_TC_HOSO.cs" />
+    <Compile Include="Models\LS\LS_TC_THUA.cs" />
+    <Compile Include="MplisDbContext.cs" />
+    <Compile Include="Models\MT\MT_CHATLUONG.cs" />
+    <Compile Include="Models\MT\MT_DONVI.cs" />
+    <Compile Include="Models\MT\MT_GIOIHAN.cs" />
+    <Compile Include="Models\MT\MT_HEQUYCHIEU.cs" />
+    <Compile Include="Models\MT\MT_LANDDATA.cs" />
+    <Compile Include="Models\MT\MT_METADATA.cs" />
+    <Compile Include="Models\MT\MT_PHANPHOI.cs" />
+    <Compile Include="Models\QH\QH_BIEUBANG.cs" />
+    <Compile Include="Models\QH\QH_BIEUBANGCAPHUYEN.cs" />
+    <Compile Include="Models\QH\QH_CAPHUYEN.cs" />
+    <Compile Include="Models\QH\QH_CAPTINH.cs" />
+    <Compile Include="Models\QH\QH_DINHKEMKCNCAPHUYEN.cs" />
+    <Compile Include="Models\QH\QH_DINHKEMKCNCAPTINH.cs" />
+    <Compile Include="Models\QH\QH_DINHKEMQUYHOACHCAPHUYEN.cs" />
+    <Compile Include="Models\QH\QH_DINHKEMQUYHOACHCAPTINH.cs" />
+    <Compile Include="Models\QH\QH_DINHKEMQUYHOACHCAPTW.cs" />
+    <Compile Include="Models\QH\QH_DINHKEMQUYHOACHQPAN.cs" />
+    <Compile Include="Models\QH\QH_KHUCHUCNANGCAPHUYEN.cs" />
+    <Compile Include="Models\QH\QH_KHUCHUCNANGCAPHUYENGEO.cs" />
+    <Compile Include="Models\QH\QH_KHUCHUCNANGCAPTINH.cs" />
+    <Compile Include="Models\QH\QH_KHUCHUCNANGCAPTINHGEO.cs" />
+    <Compile Include="Models\QH\QH_MDSD.cs" />
+    <Compile Include="Models\QH\QH_MDSD_CT.cs" />
+    <Compile Include="Models\QH\QH_QUYHOACHCAPHUYEN.cs" />
+    <Compile Include="Models\QH\QH_QUYHOACHCAPTINH.cs" />
+    <Compile Include="Models\QH\QH_QUYHOACHCAPTW.cs" />
+    <Compile Include="Models\QH\QH_QUYHOACHQPAN.cs" />
+    <Compile Include="Models\QH\QH_VUNGQUYHOACHCAPTINH.cs" />
+    <Compile Include="Models\QT\QT_BUOCQT_CAUHINH.cs" />
+    <Compile Include="Models\QT\QT_BUOCQUYTRINH.cs" />
+    <Compile Include="Models\QT\QT_CONGVIECTHEOBUOC.cs" />
+    <Compile Include="Models\QT\QT_CONGVIECTHUCHIEN.cs" />
+    <Compile Include="Models\QT\QT_FILEDINHKEMHOSO.cs" />
+    <Compile Include="Models\QT\QT_GHICHUXULY.cs" />
+    <Compile Include="Models\QT\QT_GIAYTOTHEOTTHC.cs" />
+    <Compile Include="Models\QT\QT_HOSOTIEPNHAN.cs" />
+    <Compile Include="Models\QT\QT_HOSO_LANXULY.cs" />
+    <Compile Include="Models\QT\QT_LUANCHUYEN_HOSO.cs" />
+    <Compile Include="Models\QT\QT_NGAYNGHI.cs" />
+    <Compile Include="Models\QT\QT_NHOMQUYTRINH.cs" />
+    <Compile Include="Models\QT\QT_QUYTRINH.cs" />
+    <Compile Include="Models\QT\QT_THUTUCHANHCHINH.cs" />
+    <Compile Include="Models\QT\QT_TTHC_QUYTRINH.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Migrations\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
