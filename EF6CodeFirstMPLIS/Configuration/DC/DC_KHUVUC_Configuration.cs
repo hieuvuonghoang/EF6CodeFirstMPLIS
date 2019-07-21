@@ -30,10 +30,11 @@ namespace EF6CodeFirstMPLIS.Configuration
                 .HasMaxLength(36);
 
             this.HasRequired<HC_DMKVHC>(t => t.HC_DMKVHC)
-				.WithMany(m => m.DC_KHUVUC)
-				.HasForeignKey(m => m.KVHCID);  
+                .WithMany(m => m.DC_KHUVUC)
+                .HasForeignKey(m => m.KVHCID)
+                .WillCascadeOnDelete(false);
 
-			this.ToTable("DC_KHUVUC"); 
+            this.ToTable("DC_KHUVUC"); 
 		} 
 	} 
 }

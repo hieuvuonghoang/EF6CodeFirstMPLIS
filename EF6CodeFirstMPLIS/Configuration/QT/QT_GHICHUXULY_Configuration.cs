@@ -53,7 +53,8 @@
                 .HasForeignKey(m => m.HOSOTIEPNHANID);
             this.HasRequired<QT_QUYTRINH>(t => t.QT_QUYTRINH)
                 .WithMany(m => m.QT_GHICHUXULY)
-                .HasForeignKey(m => m.QUYTRINHID);
+                .HasForeignKey(m => m.QUYTRINHID)
+                .WillCascadeOnDelete(false);
 
             this.ToTable("QT_GHICHUXULY");
         }

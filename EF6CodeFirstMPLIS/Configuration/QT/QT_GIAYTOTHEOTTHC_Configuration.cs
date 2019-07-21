@@ -19,11 +19,12 @@ namespace EF6CodeFirstMPLIS.Configuration
 			this.Property(t => t.TENLOAIGIAYTO)
 				.HasColumnName("TENLOAIGIAYTO")
 				.IsUnicode(false)
-				.HasMaxLength(2000); 
-			
-			this.HasRequired<QT_THUTUCHANHCHINH>(t => t.QT_THUTUCHANHCHINH)
-				.WithMany(m => m.QT_GIAYTOTHEOTTHC)
-				.HasForeignKey(m => m.THUTUCHANHCHINHID);  
+				.HasMaxLength(2000);
+
+            this.HasRequired<QT_THUTUCHANHCHINH>(t => t.QT_THUTUCHANHCHINH)
+                .WithMany(m => m.QT_GIAYTOTHEOTTHC)
+                .HasForeignKey(m => m.THUTUCHANHCHINHID)
+                .WillCascadeOnDelete(false);
 
 			this.ToTable("QT_GIAYTOTHEOTTHC"); 
 		} 

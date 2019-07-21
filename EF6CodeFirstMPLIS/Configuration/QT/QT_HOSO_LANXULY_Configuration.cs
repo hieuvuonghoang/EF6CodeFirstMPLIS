@@ -27,14 +27,16 @@ namespace EF6CodeFirstMPLIS.Configuration
 			this.Property(t => t.TRANGTHAI)
 				.HasColumnName("TRANGTHAI")
 				.IsUnicode(false)
-				.HasMaxLength(1); 
-			
-			this.HasRequired<QT_HOSOTIEPNHAN>(t => t.QT_HOSOTIEPNHAN)
-				.WithMany(m => m.QT_HOSO_LANXULY)
-				.HasForeignKey(m => m.HOSOTIEPNHANID);
+				.HasMaxLength(1);
+
+            this.HasRequired<QT_HOSOTIEPNHAN>(t => t.QT_HOSOTIEPNHAN)
+                .WithMany(m => m.QT_HOSO_LANXULY)
+                .HasForeignKey(m => m.HOSOTIEPNHANID)
+                .WillCascadeOnDelete(false);
             this.HasRequired<QT_QUYTRINH>(t => t.QT_QUYTRINH)
                 .WithMany(m => m.QT_HOSO_LANXULY)
-                .HasForeignKey(m => m.QUYTRINHID);
+                .HasForeignKey(m => m.QUYTRINHID)
+                .WillCascadeOnDelete(false);
 
             this.ToTable("QT_HOSO_LANXULY"); 
 		} 

@@ -68,7 +68,8 @@ namespace EF6CodeFirstMPLIS.Configuration
 				.HasForeignKey(m => m.LOAIBANDODIACHINHID);
             this.HasRequired<HC_DMKVHC>(t => t.HC_DMKVHC)
                 .WithMany(m => m.DC_TAILIEUDODAC)
-                .HasForeignKey(m => m.KVHCID);
+                .HasForeignKey(m => m.KVHCID)
+                .WillCascadeOnDelete(false);
 
             this.ToTable("DC_TAILIEUDODAC"); 
 		} 

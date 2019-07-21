@@ -33,11 +33,12 @@ namespace EF6CodeFirstMPLIS.Configuration
 				.IsUnicode(false)
 				.HasMaxLength(36);
 			this.Property(t => t.THOIDIEMCAPNHAT)
-				.HasColumnName("THOIDIEMCAPNHAT"); 
-			
-			this.HasRequired<DC_NHACHUNGCU>(t => t.DC_NHACHUNGCU)
-				.WithMany(m => m.DC_HANGMUCNGOAICANHO)
-				.HasForeignKey(m => m.NHACHUNGCUID);  
+				.HasColumnName("THOIDIEMCAPNHAT");
+
+            this.HasRequired<DC_NHACHUNGCU>(t => t.DC_NHACHUNGCU)
+                .WithMany(m => m.DC_HANGMUCNGOAICANHO)
+                .HasForeignKey(m => m.NHACHUNGCUID)
+                .WillCascadeOnDelete(false);
 
 			this.ToTable("DC_HANGMUCNGOAICANHO"); 
 		} 

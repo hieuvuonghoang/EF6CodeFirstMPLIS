@@ -46,7 +46,8 @@ namespace EF6CodeFirstMPLIS.Configuration
 				.HasForeignKey(m => m.NGUOIDUNGID);
             this.HasRequired<QT_BUOCQUYTRINH>(t => t.QT_BUOCQUYTRINH)
                 .WithMany(m => m.QT_LUANCHUYEN_HOSO)
-                .HasForeignKey(m => m.BUOCQUYTRINHID);
+                .HasForeignKey(m => m.BUOCQUYTRINHID)
+                .WillCascadeOnDelete(false);
             this.HasRequired<QT_HOSO_LANXULY>(t => t.QT_HOSO_LANXULY)
                 .WithMany(m => m.QT_LUANCHUYEN_HOSO)
                 .HasForeignKey(m => m.HOSOXULYID);
@@ -55,7 +56,8 @@ namespace EF6CodeFirstMPLIS.Configuration
                 .HasForeignKey(m => m.HOSOTIEPNHANID);
             this.HasRequired<QT_QUYTRINH>(t => t.QT_QUYTRINH)
                 .WithMany(m => m.QT_LUANCHUYEN_HOSO)
-                .HasForeignKey(m => m.QUYTRINHID);
+                .HasForeignKey(m => m.QUYTRINHID)
+                .WillCascadeOnDelete(false);
 
             this.ToTable("QT_LUANCHUYEN_HOSO"); 
 		} 

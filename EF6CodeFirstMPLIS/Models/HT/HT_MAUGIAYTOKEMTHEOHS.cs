@@ -2,7 +2,6 @@ namespace EF6CodeFirstMPLIS.Models
 {
     using System;
     using System.Collections.Generic;
-    
     public partial class HT_MAUGIAYTOKEMTHEOHS
     {
         public string MAUGIAYTOKEMTHEOHSID { get; set; }

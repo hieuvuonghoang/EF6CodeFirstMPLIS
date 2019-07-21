@@ -69,7 +69,8 @@
                 .HasForeignKey(m => m.GIAYCHUNGNHANID);
             this.HasRequired<DC_NGUOI>(t => t.DC_NGUOI)
                 .WithMany(m => m.DC_QUYENSOHUUTAISAN)
-                .HasForeignKey(m => m.NGUOIID);
+                .HasForeignKey(m => m.NGUOIID)
+                .WillCascadeOnDelete(false);
             this.HasRequired<DC_TAISANGANLIENVOIDAT>(t => t.DC_TAISANGANLIENVOIDAT)
                 .WithMany(m => m.DC_QUYENSOHUUTAISAN)
                 .HasForeignKey(m => m.TAISANGANLIENVOIDATID);

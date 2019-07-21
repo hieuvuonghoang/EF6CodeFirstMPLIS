@@ -122,37 +122,85 @@
     <Compile Include="Configuration\DC\DC_NGUONGOCSUDUNG_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_NHACHUNGCU_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_NHARIENGLE_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_NHOMNGUOI_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_NHOMNGUOI_THANHVIEN_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_NOICONGCHUNG_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_NONVTC_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_QUYENQUANLYDAT_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_QUYENSOHUUTAISANLS_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_QUYENSOHUUTAISAN_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_QUYENSUDUNGDATLS_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_QUYENSUDUNGDATSAUBD_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_QUYENSUDUNGDAT_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_QUYETDINH_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_RUNGTRONG_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_SODIACHINHDIENTU_CANHO_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_SODIACHINHDIENTU_THUADAT_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_TAILIEUDODAC_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_TAISANGANLIENVOIDATLICHSU_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_TAISANGANLIENVOIDATLS_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_TAISANGANLIENVOIDAT_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_TAISAN_DIACHI_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_TENDUONG_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_THONGTINNGANCHAN_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_THUADATLS_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_THUADAT_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_THUADAT_TAILIEUDODAC_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_THUADAT_TAISAN_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_THUATAISAN_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_THUEDAT_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_TOCHUC_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_TRANHCHAP_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_VITRITHUADAT_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_VOCHONG_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_XACNHANDONDANGKY_Configuration.cs" />
+    <Compile Include="Configuration\DC\DC_XA_TENDUONG_Configuration.cs" />
     <Compile Include="Configuration\DC\DC_YKIENXACNHAN_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_BOTHUTUCHANHCHINH_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_DANTOC_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_DOITUONGSUDUNG_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_GIAYTOKEMTHEOHS_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_HINHTHUCSUDUNGDAT_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_LOAIBANDODIACHINH_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIBIENDONG_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAICAPHANG_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIDATHIENTRANG_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIDIADANH_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIDIEMDOCAO_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIDIEMTOADO_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_LOAIDTMIENGIAM_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIDUONGTHUYHE_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIDUONG_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIGIAYTOTUYTHAN_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIHANHDONG_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIHANHLANGANTOANBAOVE_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIKETCAU_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIKHUCHUCNANGCAPHUYEN_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIKHUCHUCNANGCAPTINH_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIKHUVUCTONGHOP_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIMOCBIENGIOIDIAGIOI_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIMOC_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_LOAINGHIAVUTAICHINH_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_LOAINGUONGOCSUDUNG_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAINHA_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIQUYHOACH_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAITAISANGANLIENVOIDAT_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAITOCHUC_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAITRANGTHAIDANGKYCAPGCN_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_LOAIVUNGTHUYHE_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_MUCDICHSUDUNGQH_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_MUCDICHSUDUNG_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_QHVOICHUHO_Configuration.cs" />
     <Compile Include="Configuration\DM\DM_QUOCTICH_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_SEQUENCE_Configuration.cs" />
+    <Compile Include="Configuration\DM\DM_TRANGTHAIHOSO_Configuration.cs" />
+    <Compile Include="Configuration\GD\GD_BANDOGIADAT_Configuration.cs" />
+    <Compile Include="Configuration\GD\GD_BANGGIADAT_Configuration.cs" />
     <Compile Include="Configuration\GD\GD_DMLOAIGIADAT_Configuration.cs" />
     <Compile Include="Configuration\GD\GD_GIATHUADAT_Configuration.cs" />
+    <Compile Include="Configuration\GD\GD_HSDCGIADAT_Configuration.cs" />
+    <Compile Include="Configuration\GD\GD_KHUNGGIADAT_Configuration.cs" />
+    <Compile Include="Configuration\GD\GD_QDGIADAT_Configuration.cs" />
     <Compile Include="Configuration\HC\HC_DMKVHC_Configuration.cs" />
     <Compile Include="Configuration\HC\HC_HUYEN_Configuration.cs" />
     <Compile Include="Configuration\HC\HC_TINHTHAMSO_Configuration.cs" />
@@ -163,10 +211,13 @@
     <Compile Include="Configuration\HS\HS_TC_CHU_Configuration.cs" />
     <Compile Include="Configuration\HS\HS_TC_GCN_Configuration.cs" />
     <Compile Include="Configuration\HS\HS_THANHPHANHOSO_Configuration.cs" />
+    <Compile Include="Configuration\HS\HS_VITRILUUTRU_Configuration.cs" />
     <Compile Include="Configuration\HT\HT_CAUHINHNGUOIDUNG_Configuration.cs" />
+    <Compile Include="Configuration\HT\HT_CAUHINH_Configuration.cs" />
     <Compile Include="Configuration\HT\HT_CHUCNANG_Configuration.cs" />
     <Compile Include="Configuration\HT\HT_CHUCNANG_NHOMCHUCNANG_Configuration.cs" />
     <Compile Include="Configuration\HT\HT_LICHSUTRUYCAP_Configuration.cs" />
+    <Compile Include="Configuration\HT\HT_MAUGIAYTOKEMTHEOHS_Configuration.cs" />
     <Compile Include="Configuration\HT\HT_MENU_Configuration.cs" />
     <Compile Include="Configuration\HT\HT_NGUOIDUNG_Configuration.cs" />
     <Compile Include="Configuration\HT\HT_NGUOIDUNG_QUYEN_Configuration.cs" />
@@ -187,6 +238,34 @@
     <Compile Include="Configuration\LS\LS_TC_GCN_Configuration.cs" />
     <Compile Include="Configuration\LS\LS_TC_HOSO_Configuration.cs" />
     <Compile Include="Configuration\LS\LS_TC_THUA_Configuration.cs" />
+    <Compile Include="Configuration\MT\MT_CHATLUONG_Configuration.cs" />
+    <Compile Include="Configuration\MT\MT_DONVI_Configuration.cs" />
+    <Compile Include="Configuration\MT\MT_GIOIHAN_Configuration.cs" />
+    <Compile Include="Configuration\MT\MT_HEQUYCHIEU_Configuration.cs" />
+    <Compile Include="Configuration\MT\MT_LANDDATA_Configuration.cs" />
+    <Compile Include="Configuration\MT\MT_METADATA_Configuration.cs" />
+    <Compile Include="Configuration\MT\MT_PHANPHOI_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_BIEUBANGCAPHUYEN_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_BIEUBANG_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_CAPHUYEN_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_CAPTINH_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_DINHKEMKCNCAPHUYEN_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_DINHKEMKCNCAPTINH_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_DINHKEMQUYHOACHCAPHUYEN_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_DINHKEMQUYHOACHCAPTINH_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_DINHKEMQUYHOACHCAPTW_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_DINHKEMQUYHOACHQPAN_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_KHUCHUCNANGCAPHUYENGEO_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_KHUCHUCNANGCAPHUYEN_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_KHUCHUCNANGCAPTINHGEO_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_KHUCHUCNANGCAPTINH_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_MDSD_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_MDSD_CT_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_QUYHOACHCAPHUYEN_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_QUYHOACHCAPTINH_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_QUYHOACHCAPTW_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_QUYHOACHQPAN_Configuration.cs" />
+    <Compile Include="Configuration\QH\QH_VUNGQUYHOACHCAPTINH_Configuration.cs" />
     <Compile Include="Configuration\QT\QT_BUOCQT_CAUHINH_Configuration.cs" />
     <Compile Include="Configuration\QT\QT_BUOCQUYTRINH_Configuration.cs" />
     <Compile Include="Configuration\QT\QT_CONGVIECTHEOBUOC_Configuration.cs" />
@@ -197,11 +276,16 @@
     <Compile Include="Configuration\QT\QT_HOSOTIEPNHAN_Configuration.cs" />
     <Compile Include="Configuration\QT\QT_HOSO_LANXULY_Configuration.cs" />
     <Compile Include="Configuration\QT\QT_LUANCHUYEN_HOSO_Configuration.cs" />
+    <Compile Include="Configuration\QT\QT_NGAYNGHI_Configuration.cs" />
     <Compile Include="Configuration\QT\QT_NHOMQUYTRINH_Configuration.cs" />
     <Compile Include="Configuration\QT\QT_QUYTRINH_Configuration.cs" />
     <Compile Include="Configuration\QT\QT_THUTUCHANHCHINH_Configuration.cs" />
     <Compile Include="Configuration\QT\QT_TTHC_QUYTRINH_Configuration.cs" />
     <Compile Include="CreateClass.cs" />
+    <Compile Include="Migrations\201907211253369_InitialDatabase.cs" />
+    <Compile Include="Migrations\201907211253369_InitialDatabase.Designer.cs">
+      <DependentUpon>201907211253369_InitialDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CS\CS_CHUKYSO.cs" />
     <Compile Include="Models\CS\CS_GIAYTOXACMINH.cs" />
@@ -445,10 +529,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Migrations\readme.txt" />
+    <Content Include="Temp\Mplist.txt" />
     <Content Include="Temp\TableStruct.txt" />
     <Content Include="Temp\TempText.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Configuration\HSV\" />
+    <Folder Include="Configuration\HTV\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201907211253369_InitialDatabase.resx">
+      <DependentUpon>201907211253369_InitialDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

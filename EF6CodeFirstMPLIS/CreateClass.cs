@@ -9,26 +9,46 @@ namespace EF6CodeFirstMPLIS
     {
         public static void Main(string[] args)
         {
-            CreateFile(ReadFileTableStruct(), "DC_NHARIENGLE");
+            CreateFile(ReadFileTableStruct(), "HTV_NGUOIDUNG_UNGDUNG");
             //ReadListFile();
         }
         public static void ReadListFile()
         {
-            string nameDirec = "QT";
-            string targetDirectory = @"D:\MPLIS\EF6CodeFirstMPLIS\EF6CodeFirstMPLIS\Configuration\" + nameDirec;
+            string[] nameDirections = new string[] { "CS", "DC", "DM", "GD", "HC", "HS", "HT", "LS", "MT", "QH", "QT" };
+            string dataFile = "";
             string path = @"D:\MPLIS\EF6CodeFirstMPLIS\EF6CodeFirstMPLIS\Temp\TempText.txt";
-            string[] listFile = Directory.GetFiles(targetDirectory);
-            string strData = "#region \"" + nameDirec + "_..._Configuration\"\n";
-            foreach(string str in listFile)
+            foreach (string nameDirection in nameDirections)
             {
-                string[] strTemp = str.Split('\\');
-                string strFileName = strTemp[strTemp.Length - 1];
-                string strFileNameNoEx = strFileName.Split('.')[0];
-                strData += String.Format("modelBuilder.Configurations.Add(new {0}());\n", strFileNameNoEx);
+                string targetDirectory = @"D:\MPLIS\EF6CodeFirstMPLIS\EF6CodeFirstMPLIS\Configuration\" + nameDirection;
+                string[] listFile = Directory.GetFiles(targetDirectory);
+                string strData = "\n#region \"" + nameDirection + "_..._Configuration\"\n";
+                foreach (string str in listFile)
+                {
+                    string[] strTemp = str.Split('\\');
+                    string strFileName = strTemp[strTemp.Length - 1];
+                    string strFileNameNoEx = strFileName.Split('.')[0];
+                    strData += String.Format("modelBuilder.Configurations.Add(new {0}());\n", strFileNameNoEx);
+                }
+                strData += "#endregion";
+                dataFile += strData;
             }
-            strData += "#endregion";
-            File.WriteAllText(path, strData);
-            Console.WriteLine(strData);
+            File.WriteAllText(path, dataFile);
+            Console.WriteLine(dataFile);
+            //string nameDirec = "QT";
+            //string targetDirectory = @"D:\MPLIS\EF6CodeFirstMPLIS\EF6CodeFirstMPLIS\Configuration\" + nameDirec;
+            //string path = @"D:\MPLIS\EF6CodeFirstMPLIS\EF6CodeFirstMPLIS\Temp\TempText.txt";
+            //string[] listFile = Directory.GetFiles(targetDirectory);
+            //string strData = "#region \"" + nameDirec + "_..._Configuration\"\n";
+            //foreach (string str in listFile)
+            //{
+            //    string[] strTemp = str.Split('\\');
+            //    string strFileName = strTemp[strTemp.Length - 1];
+            //    string strFileNameNoEx = strFileName.Split('.')[0];
+            //    strData += String.Format("modelBuilder.Configurations.Add(new {0}());\n", strFileNameNoEx);
+            //}
+            //strData += "#endregion";
+            //File.WriteAllText(path, strData);
+            //Console.WriteLine(strData);
         }
         public static List<ColumnConfig> ReadFileTableStruct()
         {
@@ -62,11 +82,12 @@ namespace EF6CodeFirstMPLIS
                 if (columnConfig.Length != null)
                 {
                     strProperties += String.Format("\n\t\t\tthis.Property(t => t.{0})\n\t\t\t\t.HasColumnName(\"{1}\")\n\t\t\t\t.IsUnicode(false)\n\t\t\t\t.HasMaxLength({2});", columnConfig.Name, columnConfig.Name, columnConfig.Length);
-                } else
+                }
+                else
                 {
                     strProperties += String.Format("\n\t\t\tthis.Property(t => t.{0})\n\t\t\t\t.HasColumnName(\"{1}\");", columnConfig.Name, columnConfig.Name);
                 }
-                
+
             }
             string strRelationship = String.Format("\n\t\t\tthis.HasRequired<>(t => t.)\n\t\t\t\t.WithMany(m => m.{0})\n\t\t\t\t.HasForeignKey(m => m.); ", className);
             string publicClassInitBody = String.Format("\n\t\t\t{0} \n\t\t\t{1} \n\t\t\t{2} \n\n\t\t\t{3}", "this.HasKey(t => t.);", strProperties, strRelationship, "this.ToTable(\"" + className + "\");");

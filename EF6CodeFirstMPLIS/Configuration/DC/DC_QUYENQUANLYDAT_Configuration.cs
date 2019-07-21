@@ -72,7 +72,8 @@ namespace EF6CodeFirstMPLIS.Configuration
                 .HasForeignKey(m => m.MUCDICHSUDUNGID);
             this.HasRequired<DC_NGUOI>(t => t.DC_NGUOI)
                 .WithMany(m => m.DC_QUYENQUANLYDAT)
-                .HasForeignKey(m => m.NGUOIID);
+                .HasForeignKey(m => m.NGUOIID)
+                .WillCascadeOnDelete(false);
 
             this.ToTable("DC_QUYENQUANLYDAT");
         }

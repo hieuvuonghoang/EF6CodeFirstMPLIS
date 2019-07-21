@@ -25,8 +25,9 @@ namespace EF6CodeFirstMPLIS.Configuration
 				.WithMany(m => m.DC_BD_GCN_GCN)
 				.HasForeignKey(m => m.GIAYCHUNGNHANID);
             this.HasRequired<DC_GIAYCHUNGNHAN>(t => t.DC_GIAYCHUNGNHAN1)
-                .WithMany(m => m.DC_BD_GCN_GCN)
-                .HasForeignKey(m => m.GCNCHAID);
+                .WithMany(m => m.DC_BD_GCN_GCN1)
+                .HasForeignKey(m => m.GCNCHAID)
+                .WillCascadeOnDelete(false);
 
             this.ToTable("DC_BD_GCN_GCN"); 
 		} 

@@ -64,7 +64,8 @@ namespace EF6CodeFirstMPLIS.Configuration
 				.HasForeignKey(m => m.BOTHUTUCHANHCHINHID);
             this.HasRequired<HT_TOCHUC>(t => t.HT_TOCHUC)
                 .WithMany(m => m.QT_THUTUCHANHCHINH)
-                .HasForeignKey(m => m.TOCHUCID);
+                .HasForeignKey(m => m.TOCHUCID)
+                .WillCascadeOnDelete(false);
 
             this.ToTable("QT_THUTUCHANHCHINH"); 
 		} 

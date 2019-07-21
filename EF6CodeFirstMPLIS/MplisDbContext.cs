@@ -14,58 +14,12 @@
             modelBuilder.HasDefaultSchema("MPLIS21");
 
             #region "CS_..._Configuration"
-
-            modelBuilder.Configurations.Add(new DC_CANHAN_Configuration());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
             modelBuilder.Configurations.Add(new CS_CHUKYSO_Configuration());
             modelBuilder.Configurations.Add(new CS_GIAYTOXACMINH_Configuration());
             modelBuilder.Configurations.Add(new CS_LICHSUGIAHAN_Configuration());
             modelBuilder.Configurations.Add(new CS_NHACUNGCAP_Configuration());
             #endregion
-
             #region "DC_..._Configuration"
-
-            modelBuilder.Configurations.Add(new DC_CANHO_Configuration());
-            modelBuilder.Configurations.Add(new DC_CANHO_HANGMUCNCH_Configuration());
-            modelBuilder.Configurations.Add(new DC_HANGMUCNGOAICANHO_Configuration());
-            modelBuilder.Configurations.Add(new DC_NHACHUNGCU_Configuration());
-            modelBuilder.Configurations.Add(new DC_KHUCHUNGCU_Configuration());
-            modelBuilder.Configurations.Add(new DC_CAYLAUNAM_Configuration());
-            modelBuilder.Configurations.Add(new DC_CHITIETCONGKHAI_Configuration());
-            modelBuilder.Configurations.Add(new DC_DANHSACHCONGKHAI_Configuration());
-            modelBuilder.Configurations.Add(new DC_DONKIENNGHI_Configuration());
-            modelBuilder.Configurations.Add(new DC_CONGDONG_Configuration());
-            modelBuilder.Configurations.Add(new DC_CONGTRINHNGAM_Configuration());
-            modelBuilder.Configurations.Add(new DC_CONGTRINHXAYDUNG_Configuration());
-            modelBuilder.Configurations.Add(new DC_HANGMUCCONGTRINH_Configuration());
-            modelBuilder.Configurations.Add(new DC_DANGKY_TAISAN_Configuration());
-            modelBuilder.Configurations.Add(new DC_GIAYTOTUYTHAN_Configuration());
-            modelBuilder.Configurations.Add(new DC_HANCHE_Configuration());
-            modelBuilder.Configurations.Add(new DC_LOAIHANCHE_Configuration());
-            modelBuilder.Configurations.Add(new DC_HOGIADINH_Configuration());
-            modelBuilder.Configurations.Add(new DC_HOGIADINH_THANHVIEN_Configuration());
-            modelBuilder.Configurations.Add(new DC_LOAICHEDOMIENGIAM_Configuration());
-            modelBuilder.Configurations.Add(new DC_LOAICHEDONO_Configuration());
-            modelBuilder.Configurations.Add(new DC_MUCDICHSUDUNGDATLS_Configuration());
-            modelBuilder.Configurations.Add(new DC_NGANCHANGIAYCHUNGNHAN_Configuration());
-            modelBuilder.Configurations.Add(new DC_NGANCHANNGUOI_Configuration());
-            modelBuilder.Configurations.Add(new DC_NGANCHANTAISAN_Configuration());
-            modelBuilder.Configurations.Add(new DC_NGANCHANTHUADAT_Configuration());
-            modelBuilder.Configurations.Add(new DC_NGUOILS_Configuration());
-            modelBuilder.Configurations.Add(new DC_NHARIENGLE_Configuration());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
             modelBuilder.Configurations.Add(new DC_BD_CHUYENHTSDD_Configuration());
             modelBuilder.Configurations.Add(new DC_BD_CHUYENMDSDD_Configuration());
             modelBuilder.Configurations.Add(new DC_BD_CHU_Configuration());
@@ -76,76 +30,144 @@
             modelBuilder.Configurations.Add(new DC_BD_THUA_THUA_Configuration());
             modelBuilder.Configurations.Add(new DC_BD_TREN_GCN_Configuration());
             modelBuilder.Configurations.Add(new DC_BIENDONG_Configuration());
+            modelBuilder.Configurations.Add(new DC_CANHAN_Configuration());
+            modelBuilder.Configurations.Add(new DC_CANHO_Configuration());
+            modelBuilder.Configurations.Add(new DC_CANHO_HANGMUCNCH_Configuration());
+            modelBuilder.Configurations.Add(new DC_CAYLAUNAM_Configuration());
+            modelBuilder.Configurations.Add(new DC_CHITIETCONGKHAI_Configuration());
+            modelBuilder.Configurations.Add(new DC_CONGDONG_Configuration());
+            modelBuilder.Configurations.Add(new DC_CONGTRINHNGAM_Configuration());
+            modelBuilder.Configurations.Add(new DC_CONGTRINHXAYDUNG_Configuration());
             modelBuilder.Configurations.Add(new DC_DANGKY_GCN_Configuration());
             modelBuilder.Configurations.Add(new DC_DANGKY_NGUOI_Configuration());
+            modelBuilder.Configurations.Add(new DC_DANGKY_TAISAN_Configuration());
             modelBuilder.Configurations.Add(new DC_DANGKY_THUA_Configuration());
+            modelBuilder.Configurations.Add(new DC_DANHSACHCONGKHAI_Configuration());
             modelBuilder.Configurations.Add(new DC_DIACHI_Configuration());
             modelBuilder.Configurations.Add(new DC_DOANDUONG_Configuration());
             modelBuilder.Configurations.Add(new DC_DONDANGKY_Configuration());
+            modelBuilder.Configurations.Add(new DC_DONKIENNGHI_Configuration());
             modelBuilder.Configurations.Add(new DC_GCN_TILESH_Configuration());
             modelBuilder.Configurations.Add(new DC_GIAYCHUNGNHAN_Configuration());
+            modelBuilder.Configurations.Add(new DC_GIAYTOTUYTHAN_Configuration());
             modelBuilder.Configurations.Add(new DC_GTKEMTHEO_Configuration());
+            modelBuilder.Configurations.Add(new DC_HANCHE_Configuration());
+            modelBuilder.Configurations.Add(new DC_HANGMUCCONGTRINH_Configuration());
+            modelBuilder.Configurations.Add(new DC_HANGMUCNGOAICANHO_Configuration());
+            modelBuilder.Configurations.Add(new DC_HOGIADINH_Configuration());
+            modelBuilder.Configurations.Add(new DC_HOGIADINH_THANHVIEN_Configuration());
             modelBuilder.Configurations.Add(new DC_KHOANDUOCTRU_Configuration());
+            modelBuilder.Configurations.Add(new DC_KHUCHUNGCU_Configuration());
             modelBuilder.Configurations.Add(new DC_KHUVUC_Configuration());
             modelBuilder.Configurations.Add(new DC_LOAIBIENDONG_Configuration());
+            modelBuilder.Configurations.Add(new DC_LOAICHEDOMIENGIAM_Configuration());
+            modelBuilder.Configurations.Add(new DC_LOAICHEDONO_Configuration());
+            modelBuilder.Configurations.Add(new DC_LOAIHANCHE_Configuration());
             modelBuilder.Configurations.Add(new DC_LOAINGHIAVUTAICHINH_Configuration());
             modelBuilder.Configurations.Add(new DC_MIENGIAMNVTC_Configuration());
+            modelBuilder.Configurations.Add(new DC_MUCDICHSUDUNGDATLS_Configuration());
             modelBuilder.Configurations.Add(new DC_MUCDICHSUDUNGDAT_Configuration());
+            modelBuilder.Configurations.Add(new DC_NGANCHANGIAYCHUNGNHAN_Configuration());
+            modelBuilder.Configurations.Add(new DC_NGANCHANNGUOI_Configuration());
+            modelBuilder.Configurations.Add(new DC_NGANCHANTAISAN_Configuration());
+            modelBuilder.Configurations.Add(new DC_NGANCHANTHUADAT_Configuration());
             modelBuilder.Configurations.Add(new DC_NGHIAVUTAICHINH_Configuration());
+            modelBuilder.Configurations.Add(new DC_NGUOILS_Configuration());
             modelBuilder.Configurations.Add(new DC_NGUOI_Configuration());
             modelBuilder.Configurations.Add(new DC_NGUOI_DIACHI_Configuration());
             modelBuilder.Configurations.Add(new DC_NGUONGOCSUDUNG_Configuration());
+            modelBuilder.Configurations.Add(new DC_NHACHUNGCU_Configuration());
+            modelBuilder.Configurations.Add(new DC_NHARIENGLE_Configuration());
+            modelBuilder.Configurations.Add(new DC_NHOMNGUOI_Configuration());
+            modelBuilder.Configurations.Add(new DC_NHOMNGUOI_THANHVIEN_Configuration());
             modelBuilder.Configurations.Add(new DC_NOICONGCHUNG_Configuration());
             modelBuilder.Configurations.Add(new DC_NONVTC_Configuration());
             modelBuilder.Configurations.Add(new DC_QUYENQUANLYDAT_Configuration());
+            modelBuilder.Configurations.Add(new DC_QUYENSOHUUTAISANLS_Configuration());
             modelBuilder.Configurations.Add(new DC_QUYENSOHUUTAISAN_Configuration());
+            modelBuilder.Configurations.Add(new DC_QUYENSUDUNGDATLS_Configuration());
+            modelBuilder.Configurations.Add(new DC_QUYENSUDUNGDATSAUBD_Configuration());
             modelBuilder.Configurations.Add(new DC_QUYENSUDUNGDAT_Configuration());
+            modelBuilder.Configurations.Add(new DC_QUYETDINH_Configuration());
+            modelBuilder.Configurations.Add(new DC_RUNGTRONG_Configuration());
+            modelBuilder.Configurations.Add(new DC_SODIACHINHDIENTU_CANHO_Configuration());
+            modelBuilder.Configurations.Add(new DC_SODIACHINHDIENTU_THUADAT_Configuration());
             modelBuilder.Configurations.Add(new DC_TAILIEUDODAC_Configuration());
+            modelBuilder.Configurations.Add(new DC_TAISANGANLIENVOIDATLICHSU_Configuration());
+            modelBuilder.Configurations.Add(new DC_TAISANGANLIENVOIDATLS_Configuration());
             modelBuilder.Configurations.Add(new DC_TAISANGANLIENVOIDAT_Configuration());
             modelBuilder.Configurations.Add(new DC_TAISAN_DIACHI_Configuration());
+            modelBuilder.Configurations.Add(new DC_TENDUONG_Configuration());
+            modelBuilder.Configurations.Add(new DC_THONGTINNGANCHAN_Configuration());
+            modelBuilder.Configurations.Add(new DC_THUADATLS_Configuration());
             modelBuilder.Configurations.Add(new DC_THUADAT_Configuration());
             modelBuilder.Configurations.Add(new DC_THUADAT_TAILIEUDODAC_Configuration());
             modelBuilder.Configurations.Add(new DC_THUADAT_TAISAN_Configuration());
             modelBuilder.Configurations.Add(new DC_THUATAISAN_Configuration());
             modelBuilder.Configurations.Add(new DC_THUEDAT_Configuration());
+            modelBuilder.Configurations.Add(new DC_TOCHUC_Configuration());
             modelBuilder.Configurations.Add(new DC_TRANHCHAP_Configuration());
             modelBuilder.Configurations.Add(new DC_VITRITHUADAT_Configuration());
+            modelBuilder.Configurations.Add(new DC_VOCHONG_Configuration());
             modelBuilder.Configurations.Add(new DC_XACNHANDONDANGKY_Configuration());
+            modelBuilder.Configurations.Add(new DC_XA_TENDUONG_Configuration());
             modelBuilder.Configurations.Add(new DC_YKIENXACNHAN_Configuration());
             #endregion
-
             #region "DM_..._Configuration"
-
-            modelBuilder.Configurations.Add(new DM_DANTOC_Configuration());
-            modelBuilder.Configurations.Add(new DM_QUOCTICH_Configuration());
-            modelBuilder.Configurations.Add(new DM_QHVOICHUHO_Configuration());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
-            //modelBuilder.Configurations.Add(new ());
             modelBuilder.Configurations.Add(new DM_BOTHUTUCHANHCHINH_Configuration());
+            modelBuilder.Configurations.Add(new DM_DANTOC_Configuration());
             modelBuilder.Configurations.Add(new DM_DOITUONGSUDUNG_Configuration());
+            modelBuilder.Configurations.Add(new DM_GIAYTOKEMTHEOHS_Configuration());
             modelBuilder.Configurations.Add(new DM_HINHTHUCSUDUNGDAT_Configuration());
             modelBuilder.Configurations.Add(new DM_LOAIBANDODIACHINH_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIBIENDONG_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAICAPHANG_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIDATHIENTRANG_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIDIADANH_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIDIEMDOCAO_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIDIEMTOADO_Configuration());
             modelBuilder.Configurations.Add(new DM_LOAIDTMIENGIAM_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIDUONGTHUYHE_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIDUONG_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIGIAYTOTUYTHAN_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIHANHDONG_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIHANHLANGANTOANBAOVE_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIKETCAU_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIKHUCHUCNANGCAPHUYEN_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIKHUCHUCNANGCAPTINH_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIKHUVUCTONGHOP_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIMOCBIENGIOIDIAGIOI_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIMOC_Configuration());
             modelBuilder.Configurations.Add(new DM_LOAINGHIAVUTAICHINH_Configuration());
             modelBuilder.Configurations.Add(new DM_LOAINGUONGOCSUDUNG_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAINHA_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIQUYHOACH_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAITAISANGANLIENVOIDAT_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAITOCHUC_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAITRANGTHAIDANGKYCAPGCN_Configuration());
+            modelBuilder.Configurations.Add(new DM_LOAIVUNGTHUYHE_Configuration());
             modelBuilder.Configurations.Add(new DM_MUCDICHSUDUNGQH_Configuration());
             modelBuilder.Configurations.Add(new DM_MUCDICHSUDUNG_Configuration());
+            modelBuilder.Configurations.Add(new DM_QHVOICHUHO_Configuration());
+            modelBuilder.Configurations.Add(new DM_QUOCTICH_Configuration());
+            modelBuilder.Configurations.Add(new DM_SEQUENCE_Configuration());
+            modelBuilder.Configurations.Add(new DM_TRANGTHAIHOSO_Configuration());
             #endregion
-
             #region "GD_..._Configuration"
+            modelBuilder.Configurations.Add(new GD_BANDOGIADAT_Configuration());
+            modelBuilder.Configurations.Add(new GD_BANGGIADAT_Configuration());
             modelBuilder.Configurations.Add(new GD_DMLOAIGIADAT_Configuration());
             modelBuilder.Configurations.Add(new GD_GIATHUADAT_Configuration());
+            modelBuilder.Configurations.Add(new GD_HSDCGIADAT_Configuration());
+            modelBuilder.Configurations.Add(new GD_KHUNGGIADAT_Configuration());
+            modelBuilder.Configurations.Add(new GD_QDGIADAT_Configuration());
             #endregion
-
             #region "HC_..._Configuration"
             modelBuilder.Configurations.Add(new HC_DMKVHC_Configuration());
             modelBuilder.Configurations.Add(new HC_HUYEN_Configuration());
             modelBuilder.Configurations.Add(new HC_TINHTHAMSO_Configuration());
             modelBuilder.Configurations.Add(new HC_TINH_Configuration());
             #endregion
-
             #region "HS_..._Configuration"
             modelBuilder.Configurations.Add(new HS_HOSO_Configuration());
             modelBuilder.Configurations.Add(new HS_LICHSU_Configuration());
@@ -153,13 +175,15 @@
             modelBuilder.Configurations.Add(new HS_TC_CHU_Configuration());
             modelBuilder.Configurations.Add(new HS_TC_GCN_Configuration());
             modelBuilder.Configurations.Add(new HS_THANHPHANHOSO_Configuration());
+            modelBuilder.Configurations.Add(new HS_VITRILUUTRU_Configuration());
             #endregion
-
             #region "HT_..._Configuration"
             modelBuilder.Configurations.Add(new HT_CAUHINHNGUOIDUNG_Configuration());
+            modelBuilder.Configurations.Add(new HT_CAUHINH_Configuration());
             modelBuilder.Configurations.Add(new HT_CHUCNANG_Configuration());
             modelBuilder.Configurations.Add(new HT_CHUCNANG_NHOMCHUCNANG_Configuration());
             modelBuilder.Configurations.Add(new HT_LICHSUTRUYCAP_Configuration());
+            modelBuilder.Configurations.Add(new HT_MAUGIAYTOKEMTHEOHS_Configuration());
             modelBuilder.Configurations.Add(new HT_MENU_Configuration());
             modelBuilder.Configurations.Add(new HT_NGUOIDUNG_Configuration());
             modelBuilder.Configurations.Add(new HT_NGUOIDUNG_QUYEN_Configuration());
@@ -173,7 +197,6 @@
             modelBuilder.Configurations.Add(new HT_XA_NGUOIDUNG_Configuration());
             modelBuilder.Configurations.Add(new HT_XA_TOCHUC_Configuration());
             #endregion
-
             #region "LS_..._Configuration"
             modelBuilder.Configurations.Add(new LS_BD_GCN_Configuration());
             modelBuilder.Configurations.Add(new LS_BD_THUA_Configuration());
@@ -183,7 +206,38 @@
             modelBuilder.Configurations.Add(new LS_TC_HOSO_Configuration());
             modelBuilder.Configurations.Add(new LS_TC_THUA_Configuration());
             #endregion
-
+            #region "MT_..._Configuration"
+            modelBuilder.Configurations.Add(new MT_CHATLUONG_Configuration());
+            modelBuilder.Configurations.Add(new MT_DONVI_Configuration());
+            modelBuilder.Configurations.Add(new MT_GIOIHAN_Configuration());
+            modelBuilder.Configurations.Add(new MT_HEQUYCHIEU_Configuration());
+            modelBuilder.Configurations.Add(new MT_LANDDATA_Configuration());
+            modelBuilder.Configurations.Add(new MT_METADATA_Configuration());
+            modelBuilder.Configurations.Add(new MT_PHANPHOI_Configuration());
+            #endregion
+            #region "QH_..._Configuration"
+            modelBuilder.Configurations.Add(new QH_BIEUBANGCAPHUYEN_Configuration());
+            modelBuilder.Configurations.Add(new QH_BIEUBANG_Configuration());
+            modelBuilder.Configurations.Add(new QH_CAPHUYEN_Configuration());
+            modelBuilder.Configurations.Add(new QH_CAPTINH_Configuration());
+            modelBuilder.Configurations.Add(new QH_DINHKEMKCNCAPHUYEN_Configuration());
+            modelBuilder.Configurations.Add(new QH_DINHKEMKCNCAPTINH_Configuration());
+            modelBuilder.Configurations.Add(new QH_DINHKEMQUYHOACHCAPHUYEN_Configuration());
+            modelBuilder.Configurations.Add(new QH_DINHKEMQUYHOACHCAPTINH_Configuration());
+            modelBuilder.Configurations.Add(new QH_DINHKEMQUYHOACHCAPTW_Configuration());
+            modelBuilder.Configurations.Add(new QH_DINHKEMQUYHOACHQPAN_Configuration());
+            modelBuilder.Configurations.Add(new QH_KHUCHUCNANGCAPHUYENGEO_Configuration());
+            modelBuilder.Configurations.Add(new QH_KHUCHUCNANGCAPHUYEN_Configuration());
+            modelBuilder.Configurations.Add(new QH_KHUCHUCNANGCAPTINHGEO_Configuration());
+            modelBuilder.Configurations.Add(new QH_KHUCHUCNANGCAPTINH_Configuration());
+            modelBuilder.Configurations.Add(new QH_MDSD_Configuration());
+            modelBuilder.Configurations.Add(new QH_MDSD_CT_Configuration());
+            modelBuilder.Configurations.Add(new QH_QUYHOACHCAPHUYEN_Configuration());
+            modelBuilder.Configurations.Add(new QH_QUYHOACHCAPTINH_Configuration());
+            modelBuilder.Configurations.Add(new QH_QUYHOACHCAPTW_Configuration());
+            modelBuilder.Configurations.Add(new QH_QUYHOACHQPAN_Configuration());
+            modelBuilder.Configurations.Add(new QH_VUNGQUYHOACHCAPTINH_Configuration());
+            #endregion
             #region "QT_..._Configuration"
             modelBuilder.Configurations.Add(new QT_BUOCQT_CAUHINH_Configuration());
             modelBuilder.Configurations.Add(new QT_BUOCQUYTRINH_Configuration());
@@ -195,6 +249,7 @@
             modelBuilder.Configurations.Add(new QT_HOSOTIEPNHAN_Configuration());
             modelBuilder.Configurations.Add(new QT_HOSO_LANXULY_Configuration());
             modelBuilder.Configurations.Add(new QT_LUANCHUYEN_HOSO_Configuration());
+            modelBuilder.Configurations.Add(new QT_NGAYNGHI_Configuration());
             modelBuilder.Configurations.Add(new QT_NHOMQUYTRINH_Configuration());
             modelBuilder.Configurations.Add(new QT_QUYTRINH_Configuration());
             modelBuilder.Configurations.Add(new QT_THUTUCHANHCHINH_Configuration());
@@ -377,10 +432,10 @@
         #endregion
 
         #region "HSV_Table"
-        public DbSet<HSV_HUYEN_NGUOIDUNG> HSV_HUYEN_NGUOIDUNG { get; set; }
-        public DbSet<HSV_LICHSU> HSV_LICHSU { get; set; }
-        public DbSet<HSV_TINH_NGUOIDUNG> HSV_TINH_NGUOIDUNG { get; set; }
-        public DbSet<HSV_XA_NGUOIDUNG> HSV_XA_NGUOIDUNG { get; set; }
+        //public DbSet<HSV_HUYEN_NGUOIDUNG> HSV_HUYEN_NGUOIDUNG { get; set; }
+        //public DbSet<HSV_LICHSU> HSV_LICHSU { get; set; }
+        //public DbSet<HSV_TINH_NGUOIDUNG> HSV_TINH_NGUOIDUNG { get; set; }
+        //public DbSet<HSV_XA_NGUOIDUNG> HSV_XA_NGUOIDUNG { get; set; }
         #endregion
 
         #region "HT_Table"
@@ -406,11 +461,11 @@
         #endregion
 
         #region "HTV_Table"
-        public DbSet<HTV_MAUGIAYTO> HTV_MAUGIAYTO { get; set; }
-        public DbSet<HTV_NGUOIDUNG_CHUCNANG> HTV_NGUOIDUNG_CHUCNANG { get; set; }
-        public DbSet<HTV_NGUOIDUNG_CHUCVU> HTV_NGUOIDUNG_CHUCVU { get; set; }
-        public DbSet<HTV_NGUOIDUNG_MENU> HTV_NGUOIDUNG_MENU { get; set; }
-        public DbSet<HTV_NGUOIDUNG_UNGDUNG> HTV_NGUOIDUNG_UNGDUNG { get; set; }
+        //public DbSet<HTV_MAUGIAYTO> HTV_MAUGIAYTO { get; set; }
+        //public DbSet<HTV_NGUOIDUNG_CHUCNANG> HTV_NGUOIDUNG_CHUCNANG { get; set; }
+        //public DbSet<HTV_NGUOIDUNG_CHUCVU> HTV_NGUOIDUNG_CHUCVU { get; set; }
+        //public DbSet<HTV_NGUOIDUNG_MENU> HTV_NGUOIDUNG_MENU { get; set; }
+        //public DbSet<HTV_NGUOIDUNG_UNGDUNG> HTV_NGUOIDUNG_UNGDUNG { get; set; }
         #endregion
 
         #region "LS_Table"
