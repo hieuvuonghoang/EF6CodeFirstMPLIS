@@ -2,18 +2,22 @@ namespace EF6CodeFirstMPLIS.Configuration
 { 
 	using Models;
 	using System.Data.Entity.ModelConfiguration; 
-	public class HT_XA_NGUOIDUNG_Configuration : EntityTypeConfiguration<HT_XA_NGUOIDUNG> 
+	public class LOAIHOSO_DONVIAPDUNG_Configuration : EntityTypeConfiguration<LOAIHOSO_DONVIAPDUNG> 
 	{ 
-		public HT_XA_NGUOIDUNG_Configuration() 
+		public LOAIHOSO_DONVIAPDUNG_Configuration() 
 		{ 
-			this.HasKey(t => t.); 
+			this.HasKey(t => t.LOAIHOSODONVIAPDUNGID); 
 			
-			this.Property(t => t.NGUOIDUNGID)
-				.HasColumnName("NGUOIDUNGID")
+			this.Property(t => t.LOAIHOSODONVIAPDUNGID)
+				.HasColumnName("LOAIHOSODONVIAPDUNGID")
 				.IsUnicode(false)
 				.HasMaxLength(36);
-			this.Property(t => t.XAID)
-				.HasColumnName("XAID")
+			this.Property(t => t.NHOMNGUOIDUNGID)
+				.HasColumnName("NHOMNGUOIDUNGID")
+				.IsUnicode(false)
+				.HasMaxLength(36);
+			this.Property(t => t.LOAIHOSOID)
+				.HasColumnName("LOAIHOSOID")
 				.IsUnicode(false)
 				.HasMaxLength(36);
 			this.Property(t => t.uId)
@@ -27,13 +31,9 @@ namespace EF6CodeFirstMPLIS.Configuration
 				.IsUnicode(false)
 				.HasMaxLength(36);
 			this.Property(t => t.THOIDIEMCAPNHAT)
-				.HasColumnName("THOIDIEMCAPNHAT"); 
-			
-			this.HasRequired<>(t => t.)
-				.WithMany(m => m.HT_XA_NGUOIDUNG)
-				.HasForeignKey(m => m.);  
+				.HasColumnName("THOIDIEMCAPNHAT");
 
-			this.ToTable("HT_XA_NGUOIDUNG"); 
+			this.ToTable("LOAIHOSO_DONVIAPDUNG"); 
 		} 
 	} 
 }

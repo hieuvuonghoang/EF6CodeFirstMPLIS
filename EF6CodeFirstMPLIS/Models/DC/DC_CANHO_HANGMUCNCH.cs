@@ -2,9 +2,9 @@ namespace EF6CodeFirstMPLIS.Models
 {
     using System;
     using System.Collections.Generic;
-    
     public partial class DC_CANHO_HANGMUCNCH
     {
+        public string CANHOHANGMUCNCHID { get; set; }
         public string HANGMUCSOHUUCHUNGID { get; set; }
         public string CANHOID { get; set; }
         public string uId { get; set; }

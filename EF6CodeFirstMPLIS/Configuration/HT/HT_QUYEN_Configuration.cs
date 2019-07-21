@@ -39,7 +39,7 @@
             this.Property(t => t.THOIDIEMKHOITAO)
                 .HasColumnName("THOIDIEMKHOITAO");
             this.Property(t => t.THOIDIEMCAPNHAT)
-                .HasColumnName("THOIDIEMKHOITAO");
+                .HasColumnName("THOIDIEMCAPNHAT");
             this.Property(t => t.NGUOICAPNHATID)
                 .HasColumnName("NGUOICAPNHATID")
                 .IsUnicode(false)

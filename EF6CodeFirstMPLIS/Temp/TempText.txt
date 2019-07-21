@@ -1,0 +1,16 @@
+#region "QT_..._Configuration"
+modelBuilder.Configurations.Add(new QT_BUOCQT_CAUHINH_Configuration());
+modelBuilder.Configurations.Add(new QT_BUOCQUYTRINH_Configuration());
+modelBuilder.Configurations.Add(new QT_CONGVIECTHEOBUOC_Configuration());
+modelBuilder.Configurations.Add(new QT_CONGVIECTHUCHIEN_Configuration());
+modelBuilder.Configurations.Add(new QT_FILEDINHKEMHOSO_Configuration());
+modelBuilder.Configurations.Add(new QT_GHICHUXULY_Configuration());
+modelBuilder.Configurations.Add(new QT_GIAYTOTHEOTTHC_Configuration());
+modelBuilder.Configurations.Add(new QT_HOSOTIEPNHAN_Configuration());
+modelBuilder.Configurations.Add(new QT_HOSO_LANXULY_Configuration());
+modelBuilder.Configurations.Add(new QT_LUANCHUYEN_HOSO_Configuration());
+modelBuilder.Configurations.Add(new QT_NHOMQUYTRINH_Configuration());
+modelBuilder.Configurations.Add(new QT_QUYTRINH_Configuration());
+modelBuilder.Configurations.Add(new QT_THUTUCHANHCHINH_Configuration());
+modelBuilder.Configurations.Add(new QT_TTHC_QUYTRINH_Configuration());
+#endregion

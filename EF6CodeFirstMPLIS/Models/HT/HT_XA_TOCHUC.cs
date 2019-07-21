@@ -2,9 +2,10 @@ namespace EF6CodeFirstMPLIS.Models
 {
     using System;
     using System.Collections.Generic;
-    
     public partial class HT_XA_TOCHUC
     {
+        public string XATOCHUCID { get; set; }
+        public string KVHCID { get; set; }
         public string TOCHUCID { get; set; }
         public string XAID { get; set; }
         public string uId { get; set; }

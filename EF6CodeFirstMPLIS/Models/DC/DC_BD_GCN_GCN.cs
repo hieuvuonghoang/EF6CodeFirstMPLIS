@@ -2,7 +2,6 @@ namespace EF6CodeFirstMPLIS.Models
 {
     using System;
     using System.Collections.Generic;
-    
     public partial class DC_BD_GCN_GCN
     {
         public string BDGCNGCNID { get; set; }

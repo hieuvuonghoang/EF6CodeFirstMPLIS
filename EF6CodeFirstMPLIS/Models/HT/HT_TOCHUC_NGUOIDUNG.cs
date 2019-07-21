@@ -5,6 +5,7 @@ namespace EF6CodeFirstMPLIS.Models
     
     public partial class HT_TOCHUC_NGUOIDUNG
     {
+        public string TOCHUCNGUOIDUNGID { get; set; }
         public string TOCHUCID { get; set; }
         public string NGUOIDUNGID { get; set; }
         public string CHUCVU { get; set; }
