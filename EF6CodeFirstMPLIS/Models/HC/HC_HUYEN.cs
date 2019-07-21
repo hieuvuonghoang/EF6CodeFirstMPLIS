@@ -2,10 +2,8 @@ namespace EF6CodeFirstMPLIS.Models
 {
     using System;
     using System.Collections.Generic;
-    
     public partial class HC_HUYEN
     {
-        
         public HC_HUYEN()
         {
             this.HC_DMKVHC = new HashSet<HC_DMKVHC>();

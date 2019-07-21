@@ -2,10 +2,8 @@ namespace EF6CodeFirstMPLIS.Models
 {
     using System;
     using System.Collections.Generic;
-    
     public partial class HT_NHOMCHUCNANG
     {
-        
         public HT_NHOMCHUCNANG()
         {
             this.HT_CHUCNANG_NHOMCHUCNANG = new HashSet<HT_CHUCNANG_NHOMCHUCNANG>();
@@ -23,13 +21,10 @@ namespace EF6CodeFirstMPLIS.Models
         public Nullable<System.DateTime> THOIDIEMKHOITAO { get; set; }
         public string NGUOICAPNHATID { get; set; }
         public Nullable<System.DateTime> THOIDIEMCAPNHAT { get; set; }
-    
         
         public virtual ICollection<HT_CHUCNANG_NHOMCHUCNANG> HT_CHUCNANG_NHOMCHUCNANG { get; set; }
         public virtual HT_UNGDUNG HT_UNGDUNG { get; set; }
-        
         public virtual ICollection<HT_NHOMCHUCNANG_MENU> HT_NHOMCHUCNANG_MENU { get; set; }
-        
         public virtual ICollection<HT_TOCHUC_NHOMCHUCNANG> HT_TOCHUC_NHOMCHUCNANG { get; set; }
     }
 }

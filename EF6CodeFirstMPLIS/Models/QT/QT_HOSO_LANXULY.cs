@@ -2,10 +2,8 @@ namespace EF6CodeFirstMPLIS.Models
 {
     using System;
     using System.Collections.Generic;
-    
     public partial class QT_HOSO_LANXULY
     {
-        
         public QT_HOSO_LANXULY()
         {
             this.QT_GHICHUXULY = new HashSet<QT_GHICHUXULY>();

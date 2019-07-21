@@ -2,9 +2,9 @@ namespace EF6CodeFirstMPLIS.Models
 {
     using System;
     using System.Collections.Generic;
-    
     public partial class HT_CHUCNANG_NHOMCHUCNANG
     {
+        public string CHUCNANGNHOMCHUCNANGID { get; set; }
         public string NHOMCHUCNANGID { get; set; }
         public string CHUCNANGID { get; set; }
         public string uId { get; set; }
